@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import AppContainer from './common/containers/App';
-import './styles/_main.scss';
-import Routes from './routes';
+import React from "react";
+import ReactDOM from "react-dom";
+import Routes from "./routes";
+import AppProviders from "./common/providers/AppProviders";
+import "./styles/_main.scss";
 
 ReactDOM.render(
-  <AppContainer>
+  // AppProviders wraps the Routes component, providing it with the necessary contexts
+  <AppProviders>
     <Routes />
-  </AppContainer>,
-  document.getElementById('root')
+  </AppProviders>,
+  document.getElementById("root")
 );
