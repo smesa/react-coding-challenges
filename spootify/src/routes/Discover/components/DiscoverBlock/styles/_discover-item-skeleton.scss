@@ -1,0 +1,27 @@
+.skeleton-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+.skeleton-item {
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+  background-color: #dedede;
+  animation: pulse 2s infinite;
+  margin: 20px;
+
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

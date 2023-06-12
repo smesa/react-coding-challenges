@@ -1,7 +1,10 @@
-import React from 'react';
-import Discover from './Discover';
-
+import React from "react";
+import Discover from "./Discover";
+import SpotifyProvider from "./../modules/spotify/infrastructure/ui/contexts/spotifyContext";
 export default function Routes() {
-  // Here you'd return an array of routes
-  return <Discover />;
+  return (
+    <SpotifyProvider>
+      <Discover />
+    </SpotifyProvider>
+  );
 }
